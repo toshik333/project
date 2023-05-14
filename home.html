@@ -7,90 +7,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-              <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-              </a>
-        
-              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-              </ul>
-        
-              <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
-              </div>
-            </header>
-          </div>
-            <nav>
-                <ul class='menu'>
-                    <li><button>каталог</button></li>
-                    <li><button>корзина</button></li>
-                    <li><a href=""><img src="bigrocket-1-01-512.png" class="profile"></a></li>
-                </ul>
-            </nav>  
-    </header>
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">katalog</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Korzina</a></li>
+            </ul>
+
+            <!--Trigger-->
+            <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Login</a>
+
+            <div id="login" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button data-dismiss="modal" class="close">&times;</button>
+                            <h4>Login</h4>
+                            <form>
+                                <input type="text" name="username" class="username form-control" placeholder="Username">
+                                <input type="password" name="password" class="password form-control"
+                                    placeholder="password">
+                                <input class="btn login" type="submit" value="Login">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+    </div>
     <main>
         <table>
             <tr>
-                <td>
-                    <div>
-                        <img src="clorox-back-to-school-checklist.webp" class="baseimg">
+                <th>
+                    <div class="baseimg1">
+                        <img src="clorox-back-to-school-checklist.webp" class="baseimg1">
                     </div>
-                </td>
-                <td>
-                    <h1>Lorem ipsum dolor</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum similique hic ad labore ab
-                        itaque sint, incidunt sequi veritatis corporis tenetur earum nobis dolore perspiciatis nam
-                        excepturi illo blanditiis eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-                        minus voluptas nobis neque dolor eligendi placeat est sint, sunt voluptatibus, distinctio quasi
-                        alias illum laboriosam fugiat excepturi, magni expedita laudantium. Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Nostrum voluptatum culpa nemo qui soluta autem sint voluptatem
-                        maxime, doloribus provident expedita eligendi fugiat rem repellendus libero assumenda officiis.
-                        A, sapiente!</p>
-                </td>
-
+                </th>
+                <th>
+                    <div class="text1">
+                        <h1>
+                            <p> Lorem ipsum dolor</p>
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum similique hic ad labore
+                            ab
+                            itaque sint, incidunt sequi veritatis corporis tenetur earum nobis dolore perspiciatis nam
+                            excepturi illo blanditiis eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                            minus voluptas nobis neque dolor eligendi placeat est sint, sunt voluptatibus, distinctio
+                            quasi
+                            alias illum laboriosam fugiat excepturi, magni expedita laudantium. Lorem ipsum, dolor sit
+                            amet
+                            consectetur adipisicing elit. Nostrum voluptatum culpa nemo qui soluta autem sint voluptatem
+                            maxime, doloribus provident expedita eligendi fugiat rem repellendus libero assumenda
+                            officiis.
+                            A, sapiente!</p>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="text">
+                        <h1>
+                            <p> Lorem ipsum dolor</p>
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum similique hic ad labore
+                            ab
+                            itaque sint, incidunt sequi veritatis corporis tenetur earum nobis dolore perspiciatis nam
+                            excepturi illo blanditiis eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                            minus voluptas nobis neque dolor eligendi placeat est sint, sunt voluptatibus, distinctio
+                            quasi
+                            alias illum laboriosam fugiat excepturi, magni expedita laudantium. Lorem ipsum, dolor sit
+                            amet
+                            consectetur adipisicing elit. Nostrum voluptatum culpa nemo qui soluta autem sint voluptatem
+                            maxime, doloribus provident expedita eligendi fugiat rem repellendus libero assumenda
+                            officiis.
+                            A, sapiente!</p>
+                    </div>
+                </th>
+                <th>
+                    <div class="baseimg">
+                        <img src="kanz.jpg" class="baseimg">
+                    </div>
+                </th>
             </tr>
         </table>
+        <div class="box1"></div>
+    </main>
+    <div class="wheit">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc </span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
 </body>
 
-</main>
-<div class="footer">
-    <footer>
-        <table>
-            <tr>
-                <td>
-                    <p2>Партнёры</p2>
-                </td>
-                <td>
-                    <p2>Соцсети</p2>
-                </td>
-                <td>
-                    <p2>что-то</p2>
-                </td>
-                <td>
-                    <p2>что-то</p2>
-                </td>
-            </tr>
-            </tr>
-        </table>
-    </footer>
-</div>
-<script src="/public/javascripts/home.js"></script>
 
 </html>
