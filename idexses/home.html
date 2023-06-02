@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../stylesheets/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
 </head>
 
 <body>
+
     <div class="container">
         <header
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -20,39 +21,23 @@
             </a>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">katalog</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Korzina</a></li>
+                <li><a href="../idexses/home.html" class="nav-link px-2 link-dark">Home</a></li>
+                <li><a href="../idexses/katalog.html" class="nav-link px-2 link-dark">Katalog</a></li>
+                <li><a href="../idexses/korzina.html" class="nav-link px-2 link-dark">Korzina</a></li>
             </ul>
 
-            <!--Trigger-->
-            <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Login</a>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            <button1 onclick="document.getElementById('id02').style.display='block'" style="width: auto;;">Sign Up
+            </button1>
 
-            <div id="login" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button data-dismiss="modal" class="close">&times;</button>
-                            <h4>Login</h4>
-                            <form>
-                                <input type="text" name="username" class="username form-control" placeholder="Username">
-                                <input type="password" name="password" class="password form-control"
-                                    placeholder="password">
-                                <input class="btn login" type="submit" value="Login">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button type="button" class="btn btn-primary">Sign-up</button>
     </div>
+
     <main>
         <table>
             <tr>
                 <th>
                     <div class="baseimg1">
-                        <img src="clorox-back-to-school-checklist.webp" class="baseimg1">
+                        <img src="../images/clorox-back-to-school-checklist.webp" class="baseimg1">
                     </div>
                 </th>
                 <th>
@@ -97,13 +82,14 @@
                 </th>
                 <th>
                     <div class="baseimg">
-                        <img src="kanz.jpg" class="baseimg">
+                        <img src="../images/kanz.jpg" class="baseimg">
                     </div>
                 </th>
             </tr>
         </table>
         <div class="box1"></div>
     </main>
+
     <div class="wheit">
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -130,7 +116,62 @@
             </footer>
         </div>
     </div>
+
 </body>
 
-
 </html>
+
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">×</span>
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
+
+
+<div id="id02" class="modal1">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal"></span>
+    <form class="modal-content1" action="/action_page.php">
+        <div class="container1">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr1>
+                <label for="uname"><b>Username</b></label>
+                <input type="text1" placeholder="Enter Username" name="uname" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text1" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password1" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password1" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Я из малоимущей
+                    семьи
+                </label>
+
+                <div class="clearfix1">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                        class="cancelbtn1">Cancel</button>
+                    <button type="submit" class="signupbtn1">Sign Up</button>
+                </div>
+        </div>
+    </form>
+</div>
